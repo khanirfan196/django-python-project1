@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'userapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'userapp/css/main.css' %}">
+    <title>My Website</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Irfan Khan's Website</h1>
+    </div>
+    <div class="maincontent">
+        {% block content %}
+        {% endblock  %}
+
+    </div>
+    <div class="footer">
+        <h3>Copyrights&copy 2020</h3>
+    </div>
+</div>
+</body>
+</html>
